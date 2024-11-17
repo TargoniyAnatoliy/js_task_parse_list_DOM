@@ -6,7 +6,7 @@ const workersArr = [...listElement.children];
 listElement.innerHTML = '';
 
 sortWorkers(workersArr);
-mapWorkers(workersArr);
+getEmployees(workersArr);
 
 function sortWorkers(arr) {
   const sortedWorkers = arr.sort((worker1, worker2) => {
@@ -19,7 +19,7 @@ function sortWorkers(arr) {
   listElement.append(...sortedWorkers);
 }
 
-function mapWorkers(arr) {
+function getEmployees(arr) {
   return arr.map((worker) => {
     return {
       name: worker.innerText,
